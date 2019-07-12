@@ -8,6 +8,7 @@ public class OwnerTest {
 
     @Test
     public void dependentAssertions() {
+
         Owner owner = new Owner(1l, "Chris", "Gilroy");
         owner.setCity("Belfast");
         owner.setTelephone("123456789");
