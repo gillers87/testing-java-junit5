@@ -29,15 +29,4 @@ class PersonTest implements ModelTests {
                 () -> assertEquals(person.getLastName(), "Buck", "Last Name Failed"));
     }
 
-    @RepeatedTest(value = 10, name = "{displayName}: {currentRepetition}/{totalRepetitions}")
-    @DisplayName("My Repeated Test")
-    void myRepeatedTest() {
-        //todo - impl
-    }
-
-    @RepeatedTest(value = 5)
-    @DisplayName("My Repeated Test With DI")
-    void myRepeatedTestWithDI(TestInfo testInfo, RepetitionInfo repetitionInfo) {
-        System.out.println(testInfo.getDisplayName() + ": " + repetitionInfo.getCurrentRepetition() + "/" + repetitionInfo.getTotalRepetitions());
-    }
 }
